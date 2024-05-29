@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".GameActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FF0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFDC00 "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#0078FF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFA200"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:background="@drawable/score_bg"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Score"
+
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_Game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:background="@drawable/score_bg"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            android:layout_marginLeft="280dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Record"
+
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/record_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/restart_game"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15sp"
+            android:background="#89A2FF"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_cached_24"
+            app:tint="@color/white"
+            android:layout_marginLeft="50dp"
+            />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_item"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintVertical_bias=".4"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_00"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_01"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_02"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_03"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_10"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_11"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_12"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_13"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_20"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_21"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_22"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_23"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_30"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_31"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_32"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_33"
+                style="@style/PlayButton"
+                android:text="0"
+                android:textSize="33sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

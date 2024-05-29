@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FF0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFDC00 "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#0078FF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFA200"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_matchs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historial de partidas"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPartidas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Nueva partida"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:drawableEnd="@drawable/play1"/>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Salir"
+        android:drawableStart="@drawable/salir"/>
+
+</LinearLayout>
